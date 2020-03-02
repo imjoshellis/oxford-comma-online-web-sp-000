@@ -4,7 +4,7 @@ def oxford_comma(array)
   elsif array.size == 2
     return "#{array[0]} and #{array[1]}"
   elsif array.size > 2
-    array[array.size] = "and #{array[array.size]}"
+    array[array.size-1] = "and #{array[array.size-1]}"
     array.join(', ')
     return array
   end
