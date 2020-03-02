@@ -7,5 +7,6 @@ def oxford_comma(array)
   when array.size > 2
     array[array.size] = "and #{array.last}"
     array.join(', ')
+    return array
   end
 end
